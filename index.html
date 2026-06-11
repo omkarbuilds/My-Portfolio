@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Omkar Ghule | AI/ML Portfolio</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b0f19;
+color:white;
+font-family:'Segoe UI',sans-serif;
+overflow-x:hidden;
+}
+
+.navbar{
+background:rgba(0,0,0,.6)!important;
+backdrop-filter:blur(10px);
+}
+
+.navbar-brand{
+font-weight:bold;
+font-size:1.5rem;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
+url('images/robot.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:4rem;
+font-weight:700;
+}
+
+.hero p{
+font-size:1.3rem;
+color:#d4d4d4;
+}
+
+.profile-img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    object-position:center top;
+    border-radius:50%;
+    border:4px solid white;
+    box-shadow:0 0 25px rgba(255,255,255,.4);
+    margin-bottom:20px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.glass{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,.1);
+border-radius:20px;
+}
+
+.section-title{
+text-align:center;
+font-size:2.5rem;
+font-weight:bold;
+margin-bottom:40px;
+}
+
+.custom-btn{
+padding:12px 25px;
+border-radius:50px;
+font-weight:600;
+transition:.4s;
+}
+
+.custom-btn:hover{
+transform:translateY(-4px);
+}
+
+.skill-card,
+.project-card{
+transition:.4s;
+height:100%;
+}
+
+.skill-card:hover,
+.project-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px rgba(0,123,255,.4);
+}
+
+.progress{
+height:12px;
+border-radius:20px;
+}
+
+.contact-box input,
+.contact-box textarea{
+background:#141b2d;
+border:none;
+color:white;
+}
+
+.contact-box input:focus,
+.contact-box textarea:focus{
+background:#141b2d;
+color:white;
+box-shadow:none;
+}
+
+footer{
+background:#05070d;
+padding:25px;
+text-align:center;
+margin-top:50px;
+}
+
+.social-icons a{
+font-size:28px;
+margin:10px;
+color:white;
+transition:.3s;
+}
+
+.social-icons a:hover{
+color:#0d6efd;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.3rem;
+}
+
+.hero p{
+font-size:1rem;
+}
+
+.section-title{
+font-size:2rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<div class="container">
+<a class="navbar-brand" href="#">My Portfolio</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navMenu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+<li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+<li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<section class="hero">
+
+<div class="text-center">
+
+    <img src="images/omkar.jpg"
+         alt="Omkar Ghule"
+         class="profile-img">
+
+    <h1>Omkar Ghule</h1>
+
+    <p id="typing"></p>
+
+    <div class="mt-4">
+
+        <a href="#projects" class="btn btn-primary custom-btn">
+            View Projects
+        </a>
+
+        <a href="#contact" class="btn btn-outline-light custom-btn">
+            Contact Me
+        </a>
+
+    </div>
+
+</div>
+
+</section>
+
+<section id="about" class="container py-5">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="glass p-4">
+
+<p class="text-center">
+Passionate AI/ML Engineer with hands-on experience in Python, Machine Learning, Natural Language Processing (NLP), REST API integration, and SQL databases. Skilled in developing intelligent applications, data-driven solutions, and scalable systems using modern technologies. I enjoy solving real-world problems through Artificial Intelligence and continuously exploring new advancements in AI and Machine Learning.
+Winner of the AI & ML Track at TechForge Hackathon 2026, where I cleaned and preprocessed a customer churn dataset, developed and evaluated a Machine Learning model for churn prediction, and delivered an effective data-driven solution. Strong interest in Artificial Intelligence, Machine Learning, Natural Language Processing (NLP), Computer Vision, Retrieval-Augmented Generation (RAG), Large Language Models (LLMs), REST API Development, and CI/CD Pipelines. Passionate about building intelligent, scalable, and production-ready AI solutions.
+</p>
+
+</div>
+
+</section>
+
+<section id="skills" class="container py-5">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="row g-4">
+
+<div class="col-lg-4 col-md-6 col-12">
+<div class="glass p-4 skill-card">
+<h5>Python</h5>
+<div class="progress mt-3">
+<div class="progress-bar" style="width:90%"></div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6 col-12">
+<div class="glass p-4 skill-card">
+<h5>Machine Learning</h5>
+<div class="progress mt-3">
+<div class="progress-bar" style="width:95%"></div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6 col-12">
+<div class="glass p-4 skill-card">
+<h5>Natural Language Processing (NLP)</h5>
+<div class="progress mt-3">
+<div class="progress-bar" style="width:85%"></div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6 col-12">
+<div class="glass p-4 skill-card">
+<h5>REST API</h5>
+<div class="progress mt-3">
+<div class="progress-bar" style="width:80%"></div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6 col-12">
+<div class="glass p-4 skill-card">
+<h5>MYSQL</h5>
+<div class="progress mt-3">
+<div class="progress-bar" style="width:75%"></div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6 col-12">
+<div class="glass p-4 skill-card">
+<h5>Bootstrap</h5>
+<div class="progress mt-3">
+<div class="progress-bar" style="width:50%"></div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6 col-12">
+<div class="glass p-4 skill-card">
+<h5>Git and GitHub</h5>
+<div class="progress mt-3">
+<div class="progress-bar" style="width:85%"></div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6 col-12">
+<div class="glass p-4 skill-card">
+<h5>Data Visualization</h5>
+<div class="progress mt-3">
+<div class="progress-bar" style="width:90%"></div>
+</div>
+</div>
+</div>
+
+</div>
+
+</section>
+<section id="experience" class="container py-5">
+
+    <h2 class="section-title">Experience</h2>
+
+    <div class="glass p-4">
+
+        <h5>Software Development Engineer (SDE) Intern</h5>
+
+        <p class="text-White">
+        Company name - Pace Wisdom Solutions | Present
+        </p>
+
+        <ul>
+            <li>Learning and working with HTML, CSS, and Bootstrap for responsive web development.</li>
+            <li>Gaining practical knowledge of Database Management Systems (DBMS).</li>
+            <li>Developing programming and problem-solving skills using Python and DSA .</li>
+            <li>Understanding software development concepts through hands-on assignments and projects.</li>
+            <li>Collaborating with mentors and team members to enhance technical skills.</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<section id="projects" class="container py-5">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="row g-4">
+
+<div class="col-lg-6 col-12">
+
+<div class="glass p-4 project-card">
+
+<h4>Resume Smart Screening</h4>
+
+<p>
+Developed an AI-powered resume screening system that automatically shortlist the candidates resumes based structured profile metrics using Machine Learning.
+<br><strong>Tech stack</strong> - python, scikit-learn, pandas, numpy, matplotlib, seaborn, GitHub 
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-6 col-12">
+
+<div class="glass p-4 project-card">
+
+<h4>Movie Sentiment Analysis Using NLP</h4>
+
+<p>
+Built an NLP application that classifies movie reviews as positive or negative using NLP preprocessing, TF-IDF vectorization, and Machine Learning algorithms.
+<br><strong>Tech stack</strong> - python, NLTK, scikit-learn, flask(REST API), SQL
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- Achievements Section Start -->
+<section id="achievements"
+class="container py-5">
+
+<h2 class="section-title">Achievements</h2>
+
+<div class="glass p-4">
+
+<h5>🏆 Winner – AI & ML Track, TechForge Hackathon 2026</h5>
+
+<p>
+Cleaned and preprocessed a customer churn dataset, built and evaluated a Machine Learning model for churn prediction, and secured first place in the AI & ML track by delivering an effective data-driven solution.
+</p>
+
+        <!-- View Certificate Button -->
+        <a href="images/techforge-certificate.jpg"
+           target="_blank"
+           class="btn btn-primary custom-btn">
+           📜 View Certificate
+        </a>
+
+</div>
+
+</section>
+<!-- Achievements Section End -->
+<section class="container py-5">
+
+<h2 class="section-title">Education</h2>
+
+<div class="glass p-4">
+
+<h5>Bachelor of Computer Science (BCS) at Savitribai Phule Pune University | 2023-2026</h5>
+<p>Relevant Coursework - Artificial Intelligence, Machine Learning and Data Science</p>
+
+</div>
+
+</section>
+<section id="contact" class="container py-5">
+
+<h2 class="section-title">Contact Me</h2>
+
+<div class="glass p-4 text-center">
+
+<h3 class="mb-3">Let's Connect</h3>
+
+<p class="mb-4">
+Interested in AI/ML, NLP or Data Science projects?
+Feel free to connect with me through LinkedIn, GitHub or Email.
+</p>
+
+<div class="row text-center justify-content-center">
+
+<div class="col-md-4 mb-3">
+<h5><i class="fas fa-envelope"></i> Email</h5>
+<p>omkarghule1508@gmail.com</p>
+</div>
+
+<div class="col-md-4 mb-3">
+<h5><i class="fas fa-location-dot"></i> Location</h5>
+<p>Maharashtra, India</p>
+</div>
+
+</div>
+
+<div class="mt-4">
+
+<a href="https://linkedin.com/in/omkarghule"
+class="btn btn-primary me-2">
+<i class="fab fa-linkedin"></i> LinkedIn
+</a>
+
+<a href="https://github.com/omkarbuilds"
+class="btn btn-light">
+<i class="fab fa-github"></i> GitHub
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Omkar Ghule | AI/ML Portfolio</p>
+<p>Built with HTML, CSS, Bootstrap & Passion for AI</p>
+
+</footer>
+
+<script>
+
+const text = [
+"AI/ML Engineer"
+];
+
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+(function type(){
+
+if(count === text.length){
+count = 0;
+}
+
+currentText = text[count];
+letter = currentText.slice(0, ++index);
+
+document.getElementById("typing").textContent = letter;
+
+if(letter.length === currentText.length){
+
+count++;
+index = 0;
+
+setTimeout(type,1000);
+
+}else{
+setTimeout(type,100);
+}
+
+})();
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
